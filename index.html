@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Header  -->
+    <header class="bg-main-color">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">Pressa</a>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Izlash"
+                aria-label="Search"
+              />
+            </form>
+
+            <div class="d-block d-lg-none">
+              <button
+                class="btn btn-primary"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop"
+              >
+                <img src="./imgs/menu.svg" alt="menu" />
+              </button>
+              <div
+                class="offcanvas offcanvas-end"
+                data-bs-backdrop="static"
+                tabindex="-1"
+                id="staticBackdrop"
+                aria-labelledby="staticBackdropLabel"
+              >
+                <div class="offcanvas-header">
+                  <!-- <h5 class="offcanvas-title" id="staticBackdropLabel">
+                    Offcanvas
+                  </h5> -->
+                  <button
+                    type="button"
+                    class="btn-close offcanvas-close-btn"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul>
+                    <li class="offcanvas-item">
+                      <a href="#">Biz haqimizda</a>
+                    </li>
+                    <li class="offcanvas-item">
+                      <a href="#">Savol va javoblar</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+            <div class="d-lg-block d-none">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"
+                      >Biz haqimizda</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Savol va javoblar</a>
+                  </li>
+                  <li>
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="navbar-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      E'lon berish
+                    </button>
+
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                              Modal title
+                            </h1>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">...</div>
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Close
+                            </button>
+                            <button type="button" class="btn btn-primary">
+                              Save changes
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="hero">
+        <div class="container">
+          <h1 class="title">
+            Eng so’ngi master klasslar va tadbirlar bizning saytda
+          </h1>
+          <form action="#" class="d-flex hero__form justify-content-between">
+            <select
+              class="form-select w-auto"
+              aria-label="Default select example"
+            >
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Open this select menu</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <button class="hero__form-btn">Izlash</button>
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- Header  end-->
+
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card" style="width: 100%">
+              <img src="./imgs/card-1.jpg" class="card-img-top" alt="card-1" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Alisher Isaevdan biznes va IT bo’yicha master klass
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card" style="width: 100%">
+              <img src="./imgs/card-2.jpg" class="card-img-top" alt="card-1" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Jahongir G’ulamovdan dizayn sohasi bo’yicha master klass
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card" style="width: 100%">
+              <img src="./imgs/card-3.jpg" class="card-img-top" alt="card-3" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Yuksalish loyihasi AQSHda ovozli suhbat
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card" style="width: 100%">
+              <img src="./imgs/card-4.jpg" class="card-img-top" alt="card-4" />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Sadoqat Kaziyevadan UI/UX bo’yicha master klass
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card" style="width: 100%">
+              <img src="./imgs/card-1.jpg" class="card-img-top" alt="card-1" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Alisher Isaevdan biznes va IT bo’yicha master klass
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card" style="width: 100%">
+              <img src="./imgs/card-2.jpg" class="card-img-top" alt="card-2" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Jahongir G’ulamovdan dizayn sohasi bo’yicha master klass
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card" style="width: 100%">
+              <img src="./imgs/card-1.jpg" class="card-img-top" alt="card-1" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Alisher Isaevdan biznes va IT bo’yicha master klass
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card" style="width: 100%">
+              <img src="./imgs/card-2.jpg" class="card-img-top" alt="card-2" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Jahongir G’ulamovdan dizayn sohasi bo’yicha master klass
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="card" style="width: 100%">
+              <img src="./imgs/card-3.jpg" class="card-img-top" alt="card-3" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Yuksalish loyihasi AQSHda ovozli suhbat
+                </h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
